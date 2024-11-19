@@ -45,6 +45,7 @@ function resetGame() {
   attemptsEl.innerHTML = 10;
   inputEl.value = "";
   resultEl.innerHTML = "";
+  savedAttempts = [];
   computerGuess = Math.round(Math.random() * 100);
 }
 restartBtn.addEventListener("click", resetGame);
